@@ -1838,7 +1838,6 @@ public class Modelo
 			a[from + index] = (E) values[index];
 	}
 	
-<<<<<<< HEAD
 	
 	/**
 	 * Retorna una gráfica ASCII (Histograma) que muestre el número total de comparendos por cada LOCALIDAD representados por un String de caracteres ‘*’
@@ -3459,7 +3458,6 @@ public class Modelo
 	}
 	
 	
-=======
 	/**
 	 * Este metodo se encarga de ordenar bajo el criterio de shellSort
 	 * Funcion principal: Shell sort es un algoritmo que primero clasifica los elementos muy separados entre sí y sucesivamente reduce el intervalo entre los elementos a clasificar.
@@ -3508,5 +3506,4 @@ public class Modelo
 		a[i] = a[j];
 		a[j] = swap;
 	}
->>>>>>> f00c0575f9e3ca1071e8b4c1afd05c60d93b90f7
 }

@@ -1,4 +1,4 @@
-package test.modelo;
+package test.data_structures;
 
 import static org.junit.Assert.*;
 
