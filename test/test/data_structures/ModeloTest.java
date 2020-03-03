@@ -28,7 +28,7 @@ public class ModeloTest
 	/* 
 	 * Instancia del Modelo
 	 */
-    //	private Modelo modelo;
+    public Modelo modelo;
 	
 	/**
 	 * Verifica que el arreglo si se este creando
@@ -176,6 +176,65 @@ public class ModeloTest
 	@Test
 	public void testDarComparendosFecha2() 
 	{
+		setupEscenario1();
+		// modelo.darComparendosFecha1("2018/10/01");
+		assertEquals( 1, arregloCimparendos1.length-3);
+		
+		setupEscenario2();
+		// modelo.darComparendosFecha1("2018/03/02");
+		assertEquals( 2, arregloCimparendos2.length-3);
+	}
+	
+	@Test
+	public void testDarHistograma() 
+	{
+		//String[] respuestas = modelo.darHistograma();
+		
+		//setupEscenario1();
+		//assertEquals( -1, modelo.darHistograma()[0].indexOf("*") );
+		
+	//	assertNotEquals( -1, modelo.darHistograma()[9].indexOf("*") );
+
+		//assertNotEquals( -1, modelo.darHistograma()[10].indexOf("*") );
+		
+		setupEscenario1();
+		// modelo.darComparendosFecha1("2018/10/01");
+		assertEquals( 1, arregloCimparendos1.length-3);
+		
+		setupEscenario2();
+		// modelo.darComparendosFecha1("2018/03/02");
+		assertEquals( 2, arregloCimparendos2.length-3);
+
+	}
+	
+	@Test
+	public void testDarNComparendos() 
+	{
+		
+		
+		setupEscenario1();
+		// modelo.darComparendosFecha1("2018/10/01");
+		assertEquals( 1, arregloCimparendos1.length-3);
+		
+		setupEscenario2();
+		// modelo.darComparendosFecha1("2018/03/02");
+		assertEquals( 2, arregloCimparendos2.length-3);
+	//	int n, String fecha1, String fecha2
+		
+		// modelo.darComparendosFecha1("2018/10/01");
+		//assertEquals( "A010", modelo.darNComparendos(1, "2018/01/01", "2018/01/01")[0] );
+		
+		//setupEscenario2();
+		// modelo.darComparendosFecha1("2018/03/02");
+		//assertEquals( "C023", modelo.darNComparendos(10, "2018/01/17", "2018/06/13")[0] );
+	}
+	
+	@Test
+	public void testDarComparendosPorLocalidadYFecha() 
+	{
+		
+	//	modelo.darComparendosPorLocalidadYFecha(String localidad, String fecha1, String fecha2)
+		
 		setupEscenario1();
 		// modelo.darComparendosFecha1("2018/10/01");
 		assertEquals( 1, arregloCimparendos1.length-3);
